@@ -1,0 +1,13 @@
+# DDS User Input Control File : READ WITH WORD WRAP OFF
+# =====================================================
+Griewank   	 # 1. Python py-file function (without .py extension) OR executable file (as *.exe) OR batch file (*.bat)
+Gr10             # 2. Compact name to append to all algorithm output files
+1                # 3. Number of optimization trials to run
+500		 # 4. Average number of function evaluations per processing slave (number of total iterations for serial execution)
+9000		 # 5. Random integer to fix Mersenne Twister random number generator
+0		 # 6. Print flag: "0" saves all DDS outputs (max # files) or "1" to save only summary info (min # of files)
+0		 # 7. Enter "0" if random initial solutions, else Enter filename (with .txt extension) holding initial soln matrix
+0		 # 8. Enter relative subdirectory name (i.e. 'Model') containing objective function file (.m, .exe or .bat), else enter "0"
+1                # 9. MAX problem (enter "-1") or MIN problem (enter "1")
+1                # 10. Enter number of parallel processing slaves required. Enter "0" if you'd like Python to determine optimal pool size based on resource availability, enter "1" for serial execution
+0                # 11. Enter Model Preemption settings. Print "0" to disable pre-emption, "1" for Python to automatically preempt model or "2" for models with built-in/internal pre-emption capabilities

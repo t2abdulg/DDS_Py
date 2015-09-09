@@ -86,4 +86,14 @@ def get_objfunc(x,modeldir,objfunc_name,exe_name,slave_index):
             # else - launch ext_function to handle *.exe/*.bat
         else:
             y = ext_function(x,modeldir,exe_name)
-    return y    
+    return y 
+
+
+
+class solution:
+    def __init__(self, decnum, objnum):
+        self.dv = zeros(decnum,float)
+        self.f = zeros(objnum,float)
+        self.z = 0
+
+   
